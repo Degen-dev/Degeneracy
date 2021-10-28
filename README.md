@@ -9,8 +9,7 @@ Degeneracy is a very lightweight and easy to use proxy site made to combat web f
 ```
 git clone https://github.com/Degenerate0001/Degeneracy.git
 cd Degeneracy
-npm i corrosion
-npm i express
+npm i
 node start.js
 ```
 
@@ -20,6 +19,4 @@ Change the port you want to host Degeneracy on in ```config.json```. There you c
 
 # ToDo
 
-* Finish(obviously)
-* Add commenting
-* Clean up everything
+* Fix Tab Cloaking
