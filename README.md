@@ -1,7 +1,7 @@
 # Degeneracy
 Degeneracy is a very lightweight and easy to use proxy site made to combat web filters such as iboss, securly, gogaurdian, and more!
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Degenerate0001/Degeneracy/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Degenerate0001/Degeneracy)
 &nbsp;
 
 # Setup
