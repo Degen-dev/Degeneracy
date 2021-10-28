@@ -1,0 +1,6 @@
+{
+  "port": "10000",
+  "prefix": "/go/",
+  "title": "Service",
+  "blockedHosts": [{"url": "discord.com"}]
+}

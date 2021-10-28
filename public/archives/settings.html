@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <link rel="icon" href="https://media.giphy.com/media/eSwGh3YK54JKU/giphy.gif">
+        <meta name="description" content="A lightweight and easy to use proxy site made to combat web filters.">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+        <meta content="https://media.giphy.com/media/eSwGh3YK54JKU/giphy.gif" property="og:image"/>
+        <link rel="stylesheet" href="/styles/settings.css">
+        <title>Settings</title>
+    </head>
+    <body onload="javascript:loadPicture()">
+        <h1>Settings</h1>
+        <img id="pageicon">
+        <div>
+            <input id="tabtitle" placeholder="Ex: Google Classroom" autocomplete="off"></input><button onclick="tabtitle()" name="cloakButton">Title</button><button onclick="tabicon()" name="cloakButton">Icon</button><button onclick="resetTab()" name="cloakButton"><i class="fa fa-redo-alt"></i></button>
+        </div>
+        <p1>
+            Here you can set what you want your tab title or icon to be!
+        </p1>
+        <div>
+            <button onclick="joinButton()">Community</button>
+            <button onclick="homeButton()">Home</button>
+            <button onclick="faqButton()">FAQ</button>
+        </div>
+        <footer>
+            <p2>
+                <a href="/terms">Terms and Conditions</a>
+                |
+                <a href="/privacy">Privacy Policy</a>
+                |
+                <a href="/credits">Credits</a>
+            </p2>
+        </footer>
+    </body>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/buttons.js"></script>
+</html>

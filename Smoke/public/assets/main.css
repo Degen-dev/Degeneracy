@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Garamond Pro";
+  src: url('agaramondpro.otf')
+}
+
+
+body {
+  background: #1d232b;
+  color: #fff;
+  text-align: center;
+  font-family: "Garamond Pro", sans-serif
+}
+
+.page-container {
+  width: 60%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 500px;
+  border: 1px #eee;
+  border-radius: 2px;
+}
+
+#about-title1 {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+#about-desc1 {
+  text-align: center;
+}
+
+.fab {
+  margin-right: 3px !important;
+}
+
+#github {
+  color: white;
+  font-size: 30px;
+}
+
+.title {
+  font-size: 35px;
+  margin-left: 10px;
+}
+
+#url-input {
+  margin-top: 20px;
+  background: #1e2022;
+  border: 1px solid rgb(136, 136, 136);
+  height: 40px;
+  margin-left: 10px;
+  padding-left: 10px;
+  width: calc(100% - 80px);
+  color: #fff;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#url-input::placeholder {
+  color: #bbb;
+  font-size: 15px;
+  
+}
+
+#url-input:hover {
+  background: #2d3033;
+}
+
+#url-input:focus {
+  background: #2d3033;
+}
+
+#initiate {
+  vertical-align: top;
+  height: 44px;
+  margin-top: 20px;
+  outline: none;
+  width: 40px;
+  margin-left: 5px;
+  color: #eee;
+  font-size: 15px;
+  border: 1px solid rgb(136, 136, 136);
+  background: #1e2022;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#initiate:hover {
+  cursor: pointer;
+  background: #2d3033;
+}
+
+.container-main {
+  background: #181c20;
+  border-radius: 1px;
+  border: 1px solid rgb(136, 136, 136);
+  padding: 28px 0px;
+  text-align: left;
+  width: 100%;
+  height: auto;
+}
+
+#error-disc {
+  text-align: center;
+  margin-top: 0;
+  padding: 15px;
+  background: rgb(217, 137, 137);
+  width: calc(100% - 52px);
+  margin: auto;
+  display: none;
+  border: 1px solid;
+  border-color: rgb(236, 236, 236)
+}

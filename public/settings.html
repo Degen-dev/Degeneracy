@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <link rel="icon" href="https://media.giphy.com/media/eSwGh3YK54JKU/giphy.gif">
+        <meta name="description" content="A lightweight and easy to use proxy site made to combat web filters.">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+        <meta content="https://media.giphy.com/media/eSwGh3YK54JKU/giphy.gif" property="og:image"/>
+        <link rel="stylesheet" href="/styles/main.css">
+        <title>Settings</title>
+    </head>
+    <div class="navbar">
+        <i class="fa fa-home" onclick="location.href='/'"></i>
+        <a href="https://discord.gg/unblock">Community</a>
+        <a href="/faq">FAQ</a>
+        <a href="/settings">Settings</a>
+    </div>
+    <body onload="javascript:loadPicture()" class="settingsBody">
+        <h1 class="settingsHead">Settings</h1>
+        <img id="pageicon" class="settingsImg">
+        <div>
+            <input class="settingsInput" id="tabtitle" placeholder="Ex: Google Classroom" autocomplete="off"></input><button class="settingsButton" onclick="tabtitle()" name="cloakButton">Title</button><button class="settingsButton" onclick="tabicon()" name="cloakButton">Icon</button><button class="settingsButton" onclick="resetTab()" name="cloakButton"><i class="fa fa-redo-alt"></i></button>
+        </div>
+        <p1 class="settingsP">
+            Here you can set what you want your tab title or icon to be!
+        </p1>
+        <footer>
+            <p2>
+                <a href="/terms">Terms and Conditions</a>
+                |
+                <a href="/privacy">Privacy Policy</a>
+                |
+                <a href="/credits">Credits</a>
+            </p2>
+        </footer>
+    </body>
+    <script src="/scripts/main.js"></script>
+</html>

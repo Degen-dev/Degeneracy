@@ -1,0 +1,7 @@
+{
+    "name": "Smoke",
+    "description": "Smoke is a gateway for uncensored internet",
+    "repository": "https://github.com/FogNetwork/Smoke",
+    "logo": "https://github.com/FogNetwork/Smoke/raw/master/public/assets/logo.svg",
+    "keywords": ["javascript", "proxy", "smoke", "web-proxy", "unblocker"]
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+h1 {
+    text-align: center;
+    font-size: 69px;
+    font-family: "Roboto";
+    color: grey;
+}
+
+body {
+	background-color: #1f1f2e;
+	text-align: center;
+	font-size: 35px;
+	color: grey;
+    font-family: "Roboto";
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    font-family: "Ubuntu";
+    font-size: 15px;
+    color: grey;
+}
+
+footer, footer a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 90px;
+    height: 50px;
+    color: #FFF;
+    padding: 0px 5px;
+    font-family: "Roboto";
+    font-size: 15px;
+    background: #23272a;
+    border-radius: 5px;
+    border: solid 1px rgb(5px);
+    border-color: grey;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}

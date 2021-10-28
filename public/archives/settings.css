@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+body {
+    text-align: center;
+    background-color: #1f1f2e;
+    margin-top: 3%;
+    color: grey;
+    font-size: 45px;
+    font-family: "Ubuntu";
+}
+
+h1 {
+    color: grey;
+    font-size: 80px;
+    font-family: "Roboto";
+}
+
+p1 {
+	font-size: 25px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+input {
+    width: 50%;
+    height: 50px;
+    padding: 0px 5px;
+    color:  white;
+    font-family: "Roboto";
+    background: #23272a;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+}
+
+input:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.01);
+}
+
+button {
+    width: 90px;
+    height: 50px;
+    color: white;
+    padding: 0px 5px;
+    font-size: 15px;
+    font-family: "Roboto";
+    background: #23272a;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+button[name="cloakButton"] {
+    width: 50px;
+    height: 52px;
+    padding: 0px 5px; 
+    margin-left: 5px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    font-family: "Ubuntu";
+    font-size: 15px;
+    color: grey;
+}
+
+footer, footer a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

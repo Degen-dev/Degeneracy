@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+body {
+    text-align: center;
+    background-color: #1f1f2e;
+}
+
+.mainHead {
+    color: grey;
+    font-size: 80px;
+    letter-spacing: 5px;
+    font-family: "Roboto";
+}
+
+.picture img {
+    width: 100%;
+    height: 80%;
+}
+
+.picture {
+    display: inline-block;
+    width: 225px;
+    height: 300px;
+    border-radius: 5px;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+    color: grey;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: grey;
+    font-size: 30px;
+    font-family: "Ubuntu";
+    text-decoration: none;
+    background: #23272a;
+    transition: all .5s ease-out;
+}
+
+.picture:hover {
+    transition: all .5s ease-in;
+    transform: scale(1.05);
+}
+
+.homeButton {
+    width: 150px;
+    height: 50px;
+    color: white;
+    padding: 0px 5px;
+    font-size: 15px;
+    font-family: "Roboto";
+    background: #23272a;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.homeButton:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+}
+
+.corrosionHead {
+    color: grey;
+    font-size: 80px;
+    font-family: "Roboto";
+}
+
+.corrosionBody {
+    text-align: center;
+    background-color: #1f1f2e;
+    margin-top: 10%;
+}
+
+.navbar {
+    background-color: #23272a;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    letter-spacing: 0.8px;
+    height: 50px;
+}
+
+.navbar a {
+    color: white;
+    display: block;
+    float: right;
+    font-size: 17px;
+    padding: 12px 15px;
+    font-family: "Ubuntu";
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar i {
+    color: white;
+    display: block;
+    float: left;
+    margin-left: 25px;
+    font-size: 30px;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar i:hover {
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+input[name="url"] {
+    width: 50%;
+    height: 50px;
+    padding: 0px 5px;
+    color:  white;
+    font-family: "Roboto";
+    background: #23272a;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    border: solid 1px rgb(5px);
+}
+
+input[name="url"]:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.01);
+}
+
+iframe {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    border: none;
+    background-color: white;
+}
+
+.proxyButton {
+    width: 50px;
+    height: 52px;
+    color: white;
+    padding: 0px 5px;
+    font-size: 15px;
+    font-family: "Roboto";
+    background: #23272a;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+p {
+    color: grey;
+    font-size: 20px;
+    font-family: "Ubuntu";
+    max-width: 60%;
+    word-wrap:break-word;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p a {
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.smokeImg {
+    margin-top: 10%;
+}
+
+.credBody {
+        background-color: #1f1f2e;
+	text-align: center;
+	color: grey;
+	font-size: 30px;
+	font-family: "ubuntu";
+	margin-top: 5%;
+}
+
+.credHead {
+        font-size: 69px;
+	color: grey;
+	text-align: center;
+	font-family: "Roboto";
+        margin-top: 55px;
+}
+
+footer {
+    position: fixed;
+    margin-top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    font-family: "Ubuntu";
+    font-size: 15px;
+    color: grey;
+}
+
+footer, footer a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.settingsBody {
+    margin-top: 3%;
+    color: grey;
+    font-size: 45px;
+    font-family: "Ubuntu";
+}
+
+.settingsHead {
+    color: grey;
+    font-size: 80px;
+    font-family: "Roboto";
+}
+
+.settingsP {
+    font-size: 25px;
+}
+
+.settingsImg {
+    width: 200px;
+    height: 200px;
+}
+
+.settingsInput {
+    width: 50%;
+    height: 50px;
+    padding: 0px 5px;
+    color:  white;
+    font-family: "Roboto";
+    background: #23272a;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+}
+
+.settingsInput:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.01);
+}
+
+.settingsButton {
+    width: 90px;
+    height: 50px;
+    color: white;
+    padding: 0px 5px;
+    font-size: 15px;
+    font-family: "Roboto";
+    background: #23272a;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.settingsButton:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.settingsButton[name="cloakButton"] {
+    width: 50px;
+    height: 52px;
+    padding: 0px 5px;
+    margin-left: 5px;
+}
+
+.faqBody {
+    text-align: center;
+    background-color: #1f1f2e;
+    font-family: "Ubuntu";
+}
+
+.faqHead {
+    text-align: center;
+    color: grey;
+    font-size: 69px;
+    font-family: 'Roboto';
+    margin-top: 65px;
+}
+
+.faqQ {
+    color: grey;
+    font-size: 30px;
+}
+
+.faqA {
+   color: grey;
+   font-size: 20px;
+}
