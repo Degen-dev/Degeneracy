@@ -30,13 +30,13 @@ Default Config Example:
     "smokeprefix": "/web/"
 } 
 ```
-Port: The port you want Degeneracy to listen on.
-SSl: Set to true if you would like to use HTTPS (recommended for VPS)
-Title: the title you want your tabs to be for Corrosion. (Does not affect icon)
-Prefix: The prefix you want for Corrosion. (reccomended that you keep it the same)
-Codec: Basic encryption method for filter evasion in Corrosion. (Options include `xor`, `base64`, or `classic`. xor or base64 are recommended)
-Blacklist: Sites that you want to block with Corrosion.
-Smokeprefix: Prefix for smoke. (recommended that you keep it the same)
+* Port: The port you want Degeneracy to listen on.
+* SSl: Set to true if you would like to use HTTPS (recommended for VPS)
+* Title: the title you want your tabs to be for Corrosion. (Does not affect icon)
+* Prefix: The prefix you want for Corrosion. (reccomended that you keep it the same)
+* Codec: Basic encryption method for filter evasion in Corrosion. (Options include `xor`, `base64`, or `classic`. xor or base64 are recommended)
+* Blacklist: Sites that you want to block with Corrosion.
+* Smokeprefix: Prefix for smoke. (recommended that you keep it the same)
 
 # Persistance With PM2
 
