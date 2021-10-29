@@ -10,7 +10,7 @@ Degeneracy is a very lightweight and easy to use proxy site made to combat web f
 git clone https://github.com/Degenerate0001/Degeneracy.git
 cd Degeneracy
 npm i
-node start.js
+npm start
 ```
 
 # Config
