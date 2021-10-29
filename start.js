@@ -20,10 +20,11 @@ const
         requestMiddleware: [
             corrosion.middleware.blacklist((config.blacklist || []), 'This page has been blocked!'),
         ],
-    });
+    })
     app = require('express')().use(require('express').static(path.normalize(__dirname + '/public/'), {extensions: ['html']})).use((req, res) => {
-    if (req.url.startsWith(proxy.prefix)) return proxy.request(req,res);
-
+    if (req.url.startsWith(proxy.prefix)) return proxy.request(request, response);
+    res.status(404, res.send(error))
+    });
 proxy.bundleScripts();
 
 (config.ssl ? https : http).createServer(ssl, app).on('upgrade', (clientRequest, clientSocket, clientHead) => proxy.upgrade(clientRequest, clientSocket, clientHead)).listen(process.env.PORT || config.port);
