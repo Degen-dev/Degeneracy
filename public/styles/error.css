@@ -12,6 +12,7 @@ body {
 	text-align: center;
     color: grey;
 	font-size: 50px;
+	font-family: "Ubuntu";
 }
 
 div {
@@ -46,10 +47,11 @@ button {
     font-size: 20px;
     background: #23272a;
     border-radius: 5px;
-    border: solid 1px rgb(5px);
+    border: 1px solid grey;
     border-color: grey;
     border-width: 1px;
     cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
 button:hover {
