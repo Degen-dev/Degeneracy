@@ -53,6 +53,54 @@ pm2 save
 ```
 Run the first command outside of the `Degeneracy` directory if you want to use PM2 for anything else.
 
+# Nginx
+
+Set up Nginx to Serve Degeneracy and Obtain Letsencrypt Certificates using Certbot
+
+Run the following commands to install Nginx and Certbot (skip this step if you already have both installed):
+
+```
+apt install -y nginx python3 python3-venv libaugeas0
+python3 -m venv /opt/certbot/
+/opt/certbot/bin/pip install --upgrade pip
+/opt/certbot/bin/pip install certbot certbot-nginx
+ln -s /opt/certbot/bin/certbot /usr/bin/certbot
+```
+Next, create the following file in `/etc/nginx/sites-enabled/degeneracy`.
+
+```nginx
+server {
+    root /var/www/path/to/webroot;
+    server_name your.domain.com;
+
+    location / {
+        proxy_set_header Accept-Encoding "";
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-Host $host:$server_port;
+        proxy_set_header X-Forwarded-Server $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";   
+        proxy_pass https://127.0.0.1:8443;  # change to http if ssl is set to false
+        proxy_http_version 1.1; 
+        proxy_set_header Host $host;
+    }
+
+    listen 80;
+}
+```
+
+## Letsencrypt 
+
+Run these commands to get certificates for your site. Certbot will make this easy!
+
+```
+certbot --nginx -d <insert your domain here>
+systemctl restart nginx
+```
+
+Now check and see if your server is running! If it is, then good job, if it isn't, sorry D:
+
 # To Do
 
 * Fix Tab Cloaking
