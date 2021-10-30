@@ -55,7 +55,7 @@ Run the first command outside of the `Degeneracy` directory if you want to use P
 
 # Nginx
 
-Set up Nginx to Serve Degeneracy and Obtain Letsencrypt Certificates using Certbot
+Set up Nginx to Serve Degeneracy and Obtain Letsencrypt Certificates using Certbot.
 
 Run the following commands to install Nginx and Certbot (skip this step if you already have both installed):
 
