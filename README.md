@@ -1,15 +1,16 @@
 # Degeneracy
 Degeneracy is a very lightweight and easy to use proxy site made to combat web filters such as iboss, Securly, Goguardian, and more!
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Degenerate0001/Degeneracy)
-&nbsp;
+<a href="https://heroku.com/deploy?template=https://github.com/Degenerate0001/Degeneracy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/heroku2.svg"><img></a>
+<a href="https://repl.it/github/Degenerate0001/Degeneracy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
+<a href="https://glitch.com/edit/#!/import/github/Degenerate0001/Degeneracy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/glitch2.svg"><img></a>
 
 # Setup
 
-```
-git clone https://github.com/Degenerate0001/Degeneracy.git
+```sh
+git clone https://github.com/Degenerate0001/Degeneracy
 cd Degeneracy
-npm i
+npm install
 npm start
 ```
 
@@ -44,7 +45,7 @@ I have listed PM2 as a method for persistance as it is easy to work with, and it
 
 To get started, run the following commands:
 
-```
+```sh
 npm i pm2 -g
 pm2 start start.js
 pm2 startup
@@ -52,6 +53,6 @@ pm2 save
 ```
 Run the first command outside of the `Degeneracy` directory if you want to use PM2 for anything else.
 
-# ToDo
+# To Do
 
 * Fix Tab Cloaking
