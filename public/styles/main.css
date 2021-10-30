@@ -54,6 +54,8 @@ body {
     border-width: 1px;
     margin-top: 15px;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+    border-style: solid;
 }
 
 .homeButton:hover {
@@ -125,7 +127,8 @@ input[name="url"] {
     border-radius: 5px;
     border-color: grey;
     border-width: 1px;
-    border: solid 1px rgb(5px);
+    border: 1px solid grey;
+    transition: all .2s ease-in-out;
 }
 
 input[name="url"]:hover {
@@ -158,6 +161,8 @@ iframe {
     border-width: 1px;
     margin-top: 3px;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+    border-style: solid;
 }
 
 button:hover {
@@ -258,6 +263,8 @@ footer a:hover {
     border-radius: 5px;
     border-color: grey;
     border-width: 1px;
+    transition: all .2s ease-in-out;
+    border-style: solid;
 }
 
 .settingsInput:hover {
@@ -277,6 +284,8 @@ footer a:hover {
     border-color: grey;
     border-width: 1px;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+    border-style: solid;
 }
 
 .settingsButton:hover {
