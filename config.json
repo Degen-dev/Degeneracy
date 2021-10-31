@@ -1,7 +1,7 @@
 {
     "port": 8443,
     "ssl": true,
-    "forceHttps": true,
+    "forceHttps": false,
     "title": "Degeneracy",
     "prefix": "/go/",
     "codec": "xor",
