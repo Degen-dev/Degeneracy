@@ -150,7 +150,7 @@ iframe {
 
 .proxyButton {
     width: 50px;
-    height: 50px;
+    height: 52px;
     color: white;
     padding: 0px 5px;
     font-size: 15px;
@@ -159,7 +159,6 @@ iframe {
     border-radius: 5px;
     border-color: grey;
     border-width: 1px;
-    margin-top: 3px;
     cursor: pointer;
     transition: all .2s ease-in-out;
     border-style: solid;
