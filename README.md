@@ -24,7 +24,6 @@ Default Config Example:
 {
     "port": 8443,
     "ssl": false,
-    "forceHttps": true,
     "title": "Degeneracy",
     "prefix": "/go/",
     "codec": "xor",
@@ -34,12 +33,13 @@ Default Config Example:
 ```
 * Port: The port you want Degeneracy to listen on.
 * SSl: Set to true if you would like to use HTTPS (recommended for VPS)
-* forceHttps: Forces HTTPS. Required for Heroku. (Note: **THIS MUST BE SET TO TRUE BY DEFAULT FOR HEROKU SUPPORT**. If you leave this set to true on a VPS, you must also set ssl to true. If you set this to false, you can set ssl to true or false.
 * Title: the title you want your tabs to be for Corrosion. (Does not affect icon)
 * Prefix: The prefix you want for Corrosion. (recomended that you keep it the same)
 * Codec: Basic encryption method for filter evasion in Corrosion. (Options include `xor`, `base64`, or `classic`. xor or base64 are recommended)
 * Blacklist: Sites that you want to block with Corrosion.
 * Smokeprefix: Prefix for smoke. (recommended that you keep it the same)
+
+**Note: For a VPS, it is highly recommended that you remove `forceHttps: true` from `start.js` is you are hosting on a VPS. It is only useful for Heroku and just breaks things without Heroku.
 
 # Persistance With PM2
 
