@@ -15,7 +15,7 @@ const
         prefix: config.prefix,
         title: config.title,
         codec: config.codec,
-        forceHttps: config.forceHttps,
+        forceHttps: config.heroku,
         standardMiddleware: true,
         requestMiddleware: [
             corrosion.middleware.blacklist((config.blacklist || []), 'This page has been blocked!'),
