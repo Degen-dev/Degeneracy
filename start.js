@@ -21,7 +21,7 @@ const
         ],
     })
     app = require('express')().use(require('express').static(path.normalize(__dirname + '/public/'), {extensions: ['html']})).use((req, res) => {
-    if (req.url.startsWith(proxy.prefix)) return proxy.request(request, response);
+    if (req.url.startsWith(proxy.prefix)) return proxy.request(req, res);
     res.status(404, res.send(error))
     });
 proxy.bundleScripts();
