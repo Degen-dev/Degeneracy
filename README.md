@@ -39,7 +39,7 @@ Default Config Example:
 * Blacklist: Sites that you want to block with Corrosion.
 * Smokeprefix: Prefix for smoke. (recommended that you keep it the same)
 
-**Note: For a VPS, it is highly recommended that you remove `forceHttps: true` from `start.js` is you are hosting on a VPS. It is only useful for Heroku and just breaks things without Heroku.
+**Note: For a VPS, it is highly recommended that you remove `forceHttps: true` from `start.js` is you are hosting on a VPS. It is only useful for Heroku and just breaks things without Heroku.**
 
 # Persistance With PM2
 
