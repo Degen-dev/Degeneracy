@@ -1,1 +1,1 @@
-web: node --max_old_space_size=2560 ./demo/index.js
+web: node --max_old_space_size=2560 start.js
