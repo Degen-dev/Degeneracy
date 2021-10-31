@@ -1,7 +1,6 @@
 {
     "port": 8443,
     "ssl": false,
-    "heroku": true,
     "title": "Degeneracy",
     "prefix": "/go/",
     "codec": "xor",
