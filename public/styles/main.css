@@ -229,6 +229,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.faqFoot {
+	position: relative;
+}
+
 .settingsBody {
     margin-top: 3%;
     color: grey;
