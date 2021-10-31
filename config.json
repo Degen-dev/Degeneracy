@@ -4,7 +4,6 @@
     "title": "Degeneracy",
     "prefix": "/go/",
     "codec": "xor",
-    "datastealer": true,
     "blacklist": ["accounts.google.com"],
     "smokeprefix": "/web/"
 } 
