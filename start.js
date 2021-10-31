@@ -15,6 +15,7 @@ const
         prefix: config.prefix,
         title: config.title,
         codec: config.codec,
+        forceHTTPS: true,
         standardMiddleware: true,
         requestMiddleware: [
             corrosion.middleware.blacklist((config.blacklist || []), 'This page has been blocked!'),
