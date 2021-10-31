@@ -14,7 +14,6 @@ const
     proxy = new corrosion({
         prefix: config.prefix,
         title: config.title,
-        cookie: config.datastealer,
         codec: config.codec,
         standardMiddleware: true,
         requestMiddleware: [
