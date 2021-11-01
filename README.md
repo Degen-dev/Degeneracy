@@ -90,7 +90,7 @@ server {
         proxy_set_header Host $host;
     }
     
-    #location / { #uncomment if you would like to block Google and some other bots from accessing your site
+    #location / { #uncomment if you would like to block Google and some other bots.
        #if ($http_user_agent ~ (Googlebot|damnbot|spider) ) {
            #return 403;
     #}
