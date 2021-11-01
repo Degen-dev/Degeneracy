@@ -1,5 +1,5 @@
 # Degeneracy
-Degeneracy is a very lightweight and easy to use proxy site made to combat web filters such as iboss, Securly, Goguardian, and more!
+Degeneracy is a functional and easy to use proxy site made to combat web filters such as iboss, Securly, Goguardian, and more!
 
 <a href="https://heroku.com/deploy?template=https://github.com/Degenerate0001/Degeneracy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/heroku2.svg"><img></a>
 <a href="https://repl.it/github/Degenerate0001/Degeneracy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
@@ -68,13 +68,15 @@ python3 -m venv /opt/certbot/
 /opt/certbot/bin/pip install certbot certbot-nginx
 ln -s /opt/certbot/bin/certbot /usr/bin/certbot
 ```
+
+Note: each line above is a separate command.
+
 Next, create the following file in `/etc/nginx/sites-enabled/degeneracy`.
 
 ```nginx
 server {
     root /var/www/path/to/webroot;
     server_name your.domain.com;
-
     location / {
         proxy_set_header Accept-Encoding "";
         proxy_set_header X-Real-IP $remote_addr;
@@ -87,6 +89,11 @@ server {
         proxy_http_version 1.1; 
         proxy_set_header Host $host;
     }
+    
+    #location / { #uncomment if you would like to block Google and some other bots from accessing your site
+       #if ($http_user_agent ~ (Googlebot|damnbot|spider) ) {
+           #return 403;
+    #}
 
     listen 80;
 }
