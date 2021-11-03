@@ -25,7 +25,8 @@ const
     if (req.url.startsWith(proxy.prefix)) return proxy.request(req, res);
     res.status(404, res.send(error))
     });
-proxy.bundleScripts();
+
+    proxy.bundleScripts();
 
 (config.ssl ? https : http).createServer(ssl, app).on('upgrade', (clientRequest, clientSocket, clientHead) => proxy.upgrade(clientRequest, clientSocket, clientHead)).listen(process.env.PORT || config.port);
 console.log('Degeneracy is available at '+(config.ssl ? 'https://' : 'http://')+'localhost:'+ (process.env.PORT || config.port))
