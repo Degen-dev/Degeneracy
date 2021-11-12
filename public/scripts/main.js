@@ -1,9 +1,9 @@
 const 
-    main = document.querySelector('main') || '',
-    form = document.querySelector('form') || '',
-    input = form ? form.querySelector('input') : '',
+    main = document.querySelector('main') || {},
+    form = document.querySelector('form') || {},
+    input = !form=={} ? form.querySelector('input') : {},
     title = localStorage.getItem('title'),
-    icon = localStorage.getItem('favicon');
+    icon = localStorage.getItem('icon');
     pageicon = document.getElementById("pageicon")
    
 //Stealth Mode JS
