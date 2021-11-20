@@ -1,11 +1,11 @@
-const 
+const
     main = document.querySelector('main') || {},
     form = document.querySelector('form') || {},
     input = !form=={} ? form.querySelector('input') : {},
     title = localStorage.getItem('title'),
     icon = localStorage.getItem('icon');
     pageicon = document.getElementById("pageicon")
-   
+
 //Stealth Mode JS
 
 function stealth() {
@@ -15,16 +15,31 @@ function stealth() {
     iframe_frame.setAttribute("src", "/go/gateway?url=" + input.value);
 };
 
-function smokeStealth() {
+function womStealth() {
     const iframe_frame = document.getElementById("iframe_frame");
     iframe_frame.style.display = "initial";
     main.style.display = "none";
-    iframe_frame.setAttribute("src", "/web/gateway?url=" + input.value);
+    var url = document.getElementById("womurl").value;
+    if (url.includes(".")) {
+        iframe_frame.setAttribute("src", "https://w." + document.domain + "/main/" + url);
+    } else {
+        iframe_frame.setAttribute("src", "https://w." + document.domain + "/main/" + "https://searx.degenerate.info/search?q=" + url.replace(/ /g, "+"));
+    }
+};
+
+function pyStealth() {
+    const iframe_frame = document.getElementById("iframe_frame");
+    iframe_frame.style.display = "initial";
+    main.style.display = "none";
+    var url = document.getElementById("pruorl").value;
+    if (url.includes(".")) {
+        iframe_frame.setAttribute("src", "https://docs." + document.domain + "/main/" + url);
+    } else {
+        iframe_frame.setAttribute("src", "https://docs." + document.domain + "/main/" + "https://searx.degenerate.info/search?q=" + url.replace(/ /g, "+"));
+    }
 };
 
 //Tab Cloaking JS
-
-//Tab Title
 function tabtitle() {
     const titlechange = document.getElementById("tabtitle");
     window.localStorage.setItem("title", titlechange.value);
@@ -52,7 +67,7 @@ function loadPicture() {
     if (window.localStorage.hasOwnProperty("icon")) {
         pageicon.setAttribute("src", localStorage.getItem("icon"));
     } else {
-        pageicon.setAttribute("src", "https://media.giphy.com/media/eSwGh3YK54JKU/giphy.gif");
+        pageicon.setAttribute("src", "/images/Degener.png");
     };
 };
 

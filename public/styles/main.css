@@ -63,7 +63,31 @@ body {
     transform: scale(1.05);
 }
 
+.womginxBody {
+    text-align: center;
+    background-color: #1f1f2e;
+    margin-top: 10%;
+}
+
+.womginxHead {
+    color: grey;
+    font-size: 80px;
+    font-family: "Roboto";
+}
+
 .corrosionHead {
+    color: grey;
+    font-size: 80px;
+    font-family: "Roboto";
+}
+
+.pydodgeBody {
+    text-align: center;
+    background-color: #1f1f2e;
+    margin-top: 10%;
+}
+
+.pydodgeHead {
     color: grey;
     font-size: 80px;
     font-family: "Roboto";
@@ -230,7 +254,7 @@ footer a:hover {
 }
 
 .faqFoot {
-	position: relative;
+    position: relative;
 }
 
 .settingsBody {
