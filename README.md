@@ -1,7 +1,8 @@
 # Degeneracy
 Degeneracy is a functional and easy to use proxy site made to combat web filters such as iboss, Securly, Goguardian, and more!
 
-## Notice: This is a Public Demo for Degeneracy. This means that only Corrosion works for it. If you would like to implement PyDodge and/or Womginx, setup Womginx and point it to a `w` subdomain, and/or setup PyDodge and point it to a `docs` subdomain. Setup for these can be found here: <a href="https://github.com/BinBashBanana/PyDodge>PyDodge">PyDodge</a> <a href="https://github.com/binary-person/womginx">Womginx</a>
+## Notice
+This is a Public Demo for Degeneracy. This means that only Corrosion works for it. If you would like to implement PyDodge and/or Womginx, setup Womginx and point it to a `w` subdomain, and/or setup PyDodge and point it to a `docs` subdomain. Setup for these can be found here: <a href="https://github.com/BinBashBanana/PyDodge>PyDodge">PyDodge</a> <a href="https://github.com/binary-person/womginx">Womginx</a>
 
 <a href="https://heroku.com/deploy?template=https://github.com/Degenerate0001/Degeneracy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/heroku2.svg"><img></a>
 <a href="https://repl.it/github/Degenerate0001/Degeneracy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
