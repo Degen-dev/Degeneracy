@@ -6,6 +6,28 @@ const
     icon = localStorage.getItem('icon');
     pageicon = document.getElementById("pageicon")
 
+// Description Iframes
+
+function descClear() {
+    const descFrame = document.getElementById("descFrame");
+    descFrame.setAttribute("src", "/select#d")
+}
+
+function corDesc() {
+    const descFrame = document.getElementById("descFrame");
+    descFrame.setAttribute("src", "/select#c")
+}
+
+function womDesc() {
+    const descFrame = document.getElementById("descFrame");
+    descFrame.setAttribute("src", "/select#w")
+}
+
+function pyDesc() {
+    const descFrame = document.getElementById("descFrame");
+    descFrame.setAttribute("src", "/select#p")
+}
+
 //Stealth Mode JS
 
 function stealth() {
@@ -33,9 +55,9 @@ function pyStealth() {
     main.style.display = "none";
     var url = document.getElementById("pruorl").value;
     if (url.includes(".")) {
-        iframe_frame.setAttribute("src", "https://docs." + document.domain + "/main/" + url);
+        iframe_frame.setAttribute("src", "/service/gateway?url=" + url);
     } else {
-        iframe_frame.setAttribute("src", "https://docs." + document.domain + "/main/" + "https://searx.degenerate.info/search?q=" + url.replace(/ /g, "+"));
+        iframe_frame.setAttribute("src", "/service/gateway?url=https://searx.degenerate.info/search?q=" + url.replace(/ /g, "+"));
     }
 };
 
