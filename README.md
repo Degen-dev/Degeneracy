@@ -109,3 +109,7 @@ systemctl restart nginx
 ```
 
 Now check and see if your server is running! If it is, then good job, if it isn't, sorry D:
+
+## License
+
+This project is licensed under the BSD-3-Clause License.
