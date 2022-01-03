@@ -31,7 +31,6 @@ Default Config Example:
     "prefix": "/go/",
     "codec": "xor",
     "blacklist": ["accounts.google.com"],
-    "smokeprefix": "/web/"
 } 
 ```
 * Port: The port you want Degeneracy to listen on.
@@ -40,7 +39,6 @@ Default Config Example:
 * Prefix: The prefix you want for Corrosion. (recomended that you keep it the same)
 * Codec: Basic encryption method for filter evasion in Corrosion. (Options include `xor`, `base64`, or `plain`. xor or base64 are recommended)
 * Blacklist: Sites that you want to block with Corrosion.
-* Smokeprefix: Prefix for smoke. (recommended that you keep it the same)
 
 **Note: For a VPS, it is highly recommended that you remove `forceHttps: true` from `start.js` if you are hosting on a VPS. It is only useful for Heroku and just breaks things without Heroku.**
 
@@ -65,11 +63,11 @@ Set up Nginx to Serve Degeneracy and Obtain Letsencrypt Certificates using Certb
 Run the following commands to install Nginx and Certbot (skip this step if you already have both installed):
 
 ```
-apt install -y nginx python3 python3-venv libaugeas0
-python3 -m venv /opt/certbot/
-/opt/certbot/bin/pip install --upgrade pip
-/opt/certbot/bin/pip install certbot certbot-nginx
-ln -s /opt/certbot/bin/certbot /usr/bin/certbot
+$ apt install -y nginx python3 python3-venv libaugeas0
+$ python3 -m venv /opt/certbot/
+$ /opt/certbot/bin/pip install --upgrade pip
+$ /opt/certbot/bin/pip install certbot certbot-nginx
+$ ln -s /opt/certbot/bin/certbot /usr/bin/certbot
 ```
 
 Note: each line above is a separate command.
@@ -78,7 +76,6 @@ Next, create the following file in `/etc/nginx/sites-enabled/degeneracy`.
 
 ```nginx
 server {
-    root /var/www/path/to/webroot;
     server_name your.domain.com;
     location / {
         proxy_set_header Accept-Encoding "";
@@ -93,9 +90,9 @@ server {
         proxy_set_header Host $host;
     }
     
-    #location / { #uncomment if you would like to block Google and some other bots.
-       #if ($http_user_agent ~ (Googlebot|damnbot|spider) ) {
-           #return 403;
+    #location / { #uncomment if you would like to block Googlebot.
+    #   if ($http_user_agent ~ (Googlebot) ) {
+    #       #return 403;
     #}
 
     listen 80;
