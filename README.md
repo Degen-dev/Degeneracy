@@ -11,10 +11,10 @@ This is a Public Demo for Degeneracy. This means that only Corrosion works for i
 # Setup
 
 ```sh
-git clone https://github.com/Degenerate0001/Degeneracy
-cd Degeneracy
-npm install
-npm start
+$ git clone https://github.com/Degenerate0001/Degeneracy
+$ cd Degeneracy
+$ npm install
+$ npm start
 ```
 
 # Configuration
@@ -49,10 +49,10 @@ I have listed PM2 as a method for persistance as it is easy to work with, and it
 To get started, run the following commands:
 
 ```sh
-npm i pm2 -g
-pm2 start start.js
-pm2 startup
-pm2 save
+$ npm i pm2 -g
+$ pm2 start start.js
+$ pm2 startup
+$ pm2 save
 ```
 Run the first command outside of the `Degeneracy` directory if you want to use PM2 for anything else.
 
@@ -104,12 +104,12 @@ server {
 Run these commands to get certificates for your site. Certbot will make this easy!
 
 ```
-certbot --nginx -d <insert your domain here>
-systemctl restart nginx
+$ certbot --nginx -d <insert your domain here>
+$ systemctl restart nginx
 ```
 
 Now check and see if your server is running! If it is, then good job, if it isn't, sorry D:
 
 ## License
 
-This project is licensed under the BSD-3-Clause License.
+This project is licensed under a BSD-3-Clause License.
