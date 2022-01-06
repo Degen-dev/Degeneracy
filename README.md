@@ -12,10 +12,10 @@ This is a Public Demo for Degeneracy. This means that only Corrosion works for i
 
 - [Installation and Setup](#Installation-and-Setup)
 - [Configuration](#Configuration)
-    - [Default Config](##Default-Config-Example)
+    - [Default Config](#Default-Config-Example)
 - [Persistance](#Persistance-With-PM2)
 - [Nginx Config](#Nginx)
-    - [Letsencrypt](##Letsencrypt)
+    - [Letsencrypt](#Letsencrypt)
 - [Support](#Support)
 - [License](#License)
 
