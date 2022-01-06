@@ -8,7 +8,18 @@ This is a Public Demo for Degeneracy. This means that only Corrosion works for i
 <a href="https://repl.it/github/Degenerate0001/Degeneracy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
 <a href="https://glitch.com/edit/#!/import/github/Degenerate0001/Degeneracy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/glitch2.svg"><img></a>
 
-# Setup
+# Table Of Contents
+
+- [Installation and Setup](#Installation and Setup)
+- [Configuration](#Configuration)
+-   [Default Config](##Default Config Example)
+- [Persistance](#Persistance With PM2)
+- [Nginx Config](#Nginx)
+-   [Letsencrypt](##Letsencrypt)
+- [Support](#Support)
+- [License](#License)
+
+# Installation and Setup
 
 ```sh
 $ git clone https://github.com/Degenerate0001/Degeneracy
@@ -21,7 +32,7 @@ $ npm start
 
 Configure Degeneracy in `config.json`.
 
-Default Config Example:
+## Default Config Example:
 
 ```json
 {
@@ -110,6 +121,10 @@ $ systemctl restart nginx
 
 Now check and see if your server is running! If it is, then good job, if it isn't, sorry D:
 
-## License
+# Support
+
+For any questions, comments, or concerns, please open an issue or contact me on Discord: `@Degenerate#0001`
+
+# License
 
 This project is licensed under a BSD-3-Clause License.
