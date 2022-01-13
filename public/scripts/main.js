@@ -1,44 +1,42 @@
-const
+let
     main = document.querySelector('main') || {},
     form = document.querySelector('form') || {},
-    input = !form=={} ? form.querySelector('input') : {},
+    // input = !form=={} ? form.querySelector('input') : {},
+    input = form.querySelector('input'),
     title = localStorage.getItem('title'),
-    icon = localStorage.getItem('icon');
-    pageicon = document.getElementById("pageicon")
+    icon = localStorage.getItem('icon'),
+    pageicon = document.getElementById("pageicon"),
+    iframe_frame = document.getElementById("iframe_frame"),
+    titlechange = document.getElementById("tabtitle"),
+    descFrame = document.getElementById("descFrame");
 
 // Description Iframes
 
 function descClear() {
-    const descFrame = document.getElementById("descFrame");
     descFrame.setAttribute("src", "/select#d")
 }
 
 function corDesc() {
-    const descFrame = document.getElementById("descFrame");
     descFrame.setAttribute("src", "/select#c")
 }
 
 function womDesc() {
-    const descFrame = document.getElementById("descFrame");
     descFrame.setAttribute("src", "/select#w")
 }
 
 function pyDesc() {
-    const descFrame = document.getElementById("descFrame");
     descFrame.setAttribute("src", "/select#p")
 }
 
 //Stealth Mode JS
 
 function stealth() {
-    const iframe_frame = document.getElementById("iframe_frame");
     iframe_frame.style.display = "initial";
     main.style.display = "none";
     iframe_frame.setAttribute("src", "/go/gateway?url=" + input.value);
 };
 
 function womStealth() {
-    const iframe_frame = document.getElementById("iframe_frame");
     iframe_frame.style.display = "initial";
     main.style.display = "none";
     var url = document.getElementById("womurl").value;
@@ -50,7 +48,6 @@ function womStealth() {
 };
 
 function pyStealth() {
-    const iframe_frame = document.getElementById("iframe_frame");
     iframe_frame.style.display = "initial";
     main.style.display = "none";
     var url = document.getElementById("pruorl").value;
@@ -63,7 +60,6 @@ function pyStealth() {
 
 //Tab Cloaking JS
 function tabtitle() {
-    const titlechange = document.getElementById("tabtitle");
     window.localStorage.setItem("title", titlechange.value);
     window.document.title = titlechange.value;
 };
@@ -74,7 +70,6 @@ if (window.localStorage.hasOwnProperty('title')) {
 
 //Tab Icon
 function tabicon() {
-    const titlechange = document.getElementById("tabtitle");
     document.head.querySelector("link[rel=icon]").href = titlechange.value;
     window.localStorage.setItem("icon", titlechange.value);
     loadPicture()

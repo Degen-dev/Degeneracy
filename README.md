@@ -119,7 +119,21 @@ $ certbot --nginx -d <insert your domain here>
 $ systemctl restart nginx
 ```
 
-Now check and see if your server is running! If it is, then good job, if it isn't, sorry D:
+### Cron
+
+If you would like, you can setup a cron job to automatically renew your certificates once they expire. To do this, run the following command.
+
+```
+$ crontab -e
+```
+
+Here you may be prompted to choose a text editor. The default will be just fine for our purposes. After you are brought into the file, add the following line to it.
+
+```
+0 12 * * * /usr/bin/certbot renew --quiet
+```
+
+This will check every day at noon if your certs are about to expire. If they are, they will be silently renewed. By doing this, you'll never really have to worry about certs again after your initial install and setup.
 
 # Support
 
@@ -127,4 +141,4 @@ For any questions, comments, or concerns, please open an issue or contact me on 
 
 # License
 
-This project is licensed under a BSD-3-Clause License.
+This project is licensed under a BSD 3-Clause License.
