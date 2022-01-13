@@ -1,10 +1,9 @@
 let
     main = document.querySelector('main') || {},
     form = document.querySelector('form') || {},
-    // input = !form=={} ? form.querySelector('input') : {},
-    input = form.querySelector('input'),
+    input = !form=={} ? form.querySelector('input') : {},
     title = localStorage.getItem('title'),
-    icon = localStorage.getItem('icon'),
+    icon = localStorage.getItem('icon');
     pageicon = document.getElementById("pageicon"),
     iframe_frame = document.getElementById("iframe_frame"),
     titlechange = document.getElementById("tabtitle"),
@@ -97,3 +96,4 @@ function resetTab() {
     window.location.reload();
     pageicon();
 };
+
