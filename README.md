@@ -9,16 +9,16 @@ This is a Public Demo for Degeneracy. This means that only Corrosion works for i
 <a href="https://glitch.com/edit/#!/import/github/Degenerate0001/Degeneracy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/glitch2.svg"><img></a>
 
 # Table Of Contents
-
-- [Installation and Setup](#Installation-and-Setup)
-- [Configuration](#Configuration)
+- [Degeneracy](#Degeneracy)
+  - [Installation and Setup](#Installation-and-Setup)
+  - [Configuration](#Configuration)
     - [Default Config](#Default-Config-Example)
-- [Persistance](#Persistance-With-PM2)
-- [Nginx Config](#Nginx)
+  - [Persistance](#Persistance-With-PM2)
+  - [Nginx Config](#Nginx)
     - [Letsencrypt](#Letsencrypt)
-        - [Cron](#Cron)
-- [Support](#Support)
-- [License](#License)
+      - [Cron](#Cron)
+  - [Support](#Support)
+  - [License](#License)
 
 # Installation and Setup
 
@@ -142,4 +142,4 @@ For any questions, comments, or concerns, please open an issue or contact me on 
 
 # License
 
-This project is licensed under a BSD 3-Clause License.
+This project is licensed under a Degen License. Conditions of this license are subject to change at any time.
