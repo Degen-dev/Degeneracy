@@ -167,3 +167,7 @@ TVqUhp1JARTLwpAzGN1aNhA2BAgcgbpTqx
 Litecoin
 
 LQ1d7trtg8eY94jMZKn1FuDLB7pfa6QKeC
+
+Bitcoin Cash
+
+qqqv4lpv3tsedstmu5nlwnve43mgdgvjwqgjtnwff9
