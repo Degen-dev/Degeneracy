@@ -143,3 +143,27 @@ For any questions, comments, or concerns, please open an issue or contact me on 
 # License
 
 This project is licensed under a Degen License. Conditions of this license are subject to change at any time.
+
+# Donations
+
+If you would like to contribute to the project via donation? Send in some crypto.
+
+Bitcoin
+
+bc1quudcnamt6fe0y3ll9qtqpuckf985utgpl0x8gu
+
+Ethereum
+
+0xeBC65F88Ced95247738C1e3F2114387D8B878348
+
+Monero
+
+47LetcrPmiuR1V9FvehmEXhAc2YG2kk1PaB89nKcsNyWbgkUwJC2py7QzD1SoNqwX19uGbQ67MfQNga1op29AwHn9wRhv8L
+
+Tron
+
+TVqUhp1JARTLwpAzGN1aNhA2BAgcgbpTqx
+
+Litecoin
+
+LQ1d7trtg8eY94jMZKn1FuDLB7pfa6QKeC
