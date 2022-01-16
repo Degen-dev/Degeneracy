@@ -146,7 +146,7 @@ This project is licensed under a Degen License. Conditions of this license are s
 
 # Donations
 
-If you would like to contribute to the project via donation? Send in some crypto.
+If you would like to contribute to the project via donation, send in some crypto! Your donation will be very appreciated :D
 
 Bitcoin
 
