@@ -66,14 +66,23 @@ body {
     transform: scale(1.05);
 }
 
+.choicePage {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
 .proSelect {
     margin-bottom: 5%;
 }
 
 #descFrame {
     width: 100%;
-    height: 50px;
-}
+    height: 50px;}
 
 .homeButton {
     width: 150px;
@@ -120,12 +129,12 @@ body {
     font-family: 'Roboto';
 }
 
-.pydodgeBody {
+.rhodiumBody {
     text-align: center;
     margin-top: 10%;
 }
 
-.pydodgeHead {
+.rhodiumHead {
     color: grey;
     font-size: 80px;
     font-family: 'Roboto';
@@ -403,4 +412,22 @@ footer a:hover {
 
 .errorDiv {
 	font-size: 30px;
+}
+
+.siteButton {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    padding: 0px 5px;
+    font-size: 17px;
+    font-family: 'Roboto';
+    background: #23272a;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border-style: solid;
 }
