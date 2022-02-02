@@ -142,7 +142,7 @@ For any questions, comments, or concerns, please open an issue or contact me on 
 
 # License
 
-This project is licensed under a Degen License. Conditions of this license are subject to change at any time.
+This project is licensed under the Gnu General Public License v3.
 
 # Donations
 
