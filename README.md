@@ -1,4 +1,21 @@
-# Degeneracy
+<p align="center">
+    <img src="https://raw.githubusercontent.com/degen-dev/degeneracy/master/public/images/degen.png"
+        height="300">
+</p>
+<p align="center">
+    <a href="https://github.com/Degen-dev/Degeneracy/issues" alt="Contributors">
+        <img src="https://img.shields.io/github/issues/Degen-dev/Degeneracy?style=for-the-badge" /></a>
+    <a href="https://github.com/Degen-dev/Degeneracy/network/members" alt="Forks">
+        <img src="https://img.shields.io/github/forks/Degen-dev/Degeneracy?style=for-the-badge" /></a> 
+    <a href="https://github.com/Degen-dev/Degeneracy/stargazers" alt="Stars">
+        <img src="https://img.shields.io/github/stars/Degen-dev/Degeneracy?style=for-the-badge" /></a>
+    <a href="https://github.com/Degen-dev/Degeneracy/blob/master/LICENSE">
+        <img src="https://img.shields.io/github/license/Degen-dev/Degeneracy?style=for-the-badge" /></a>
+    <a href="https://discord.gg/HjJCwm5">
+        <img src="https://img.shields.io/discord/419123358698045453?style=for-the-badge&logo=discord"
+            alt="chat on Discord"></a>
+</p>
+<p align="center">
 Degeneracy is a functional and easy to use proxy site made to combat web filters such as iboss, Securly, Goguardian, and more!
 
 ## Notice
@@ -111,7 +128,7 @@ server {
 }
 ```
 
-## Letsencrypt 
+## Letsencrypt
 
 Run these commands to get certificates for your site. Certbot will make this easy!
 
@@ -142,7 +159,7 @@ For any questions, comments, or concerns, please open an issue or contact me on 
 
 # License
 
-This project is licensed under the Gnu General Public License v3.
+This project is licensed under the GNU General Public License v3.
 
 # Donations
 
