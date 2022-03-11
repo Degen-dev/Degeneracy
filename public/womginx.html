@@ -1,63 +1,62 @@
 <!DOCTYPE html>
-<html class="womginx">
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
-        <link rel="icon" href="/images/Degener.png">
-        <meta name="description" content="A functional and easy to use bypass for filters.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A functional, free, and easy to use web proxy site.">
         <meta property="og:image" content="/images/degen.png" />
-        <link rel="stylesheet" href="/styles/main.css">
-        <title>Degeneracy</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" crossorigin="anonymous">
+        <link rel="icon" href="images/degeneracy_main_logo.png">
+        <title>Degeneracy | Womginx</title>
     </head>
-    <body class="womginxBody">
-        <h1 class="womginxHead">
-            Womginx
-        </h1>
+    <body>
+        <div class="navbar">
+            <div class="dropDown">
+                <i class="fa-solid fa-bars ddIcon"></i>
+                    <div class="dropdownContent">
+                        <a href="/privacy.html"><i class="fa-solid fa-gavel"></i>Privacy Policy</a>
+                        <a href="/terms.html"><i class="fa-solid fa-gavel"></i>Terms of Service</a>
+                        <a href="https://discord.gg/unblock"><i class="fab fa-discord"></i>Community</a>
+                        <a href="https://github.com/Degen-dev/Degeneracy"><i class="fab fa-github"></i>Repository</a>
+                    </div>
+            </div>
+            <i class="fa fa-home" id="homeButton" onclick="location.href='/choice.html'"></i>
+            <a href="https://github.com/Degen-dev/Degeneracy/blob/master/README.md#frequently-asked-questions">FAQ</a>
+            <a href="/settings.html">Settings</a>
+        </div>
         <iframe id="iframe_frame" src=""></iframe>
         <main>
-            <div class="navbar">
-                <i class="fa fa-home" onclick="location.href='/choice'"></i>
-                <a href="https://discord.gg/unblock">Community</a>
-                <a href="/faq">FAQ</a>
-                <a href="/settings">Settings</a>
+            <div class="proHead">
+                <h>Womginx</h>
             </div>
-            <div>
+            <div class="proBar">
                 <form id="womf">
                     <input type="text" autocomplete="off" name="url" id="womurl" placeholder="Search the web freely...">
                     <button class="proButton" type="submit"><i class="fa fa-search"></i></button>
                     <button class="proButton" type="button" onclick="womStealth()"><i class="fa fa-eye-slash"></i></button>
                 </form>
             </div>
-            <div>
+            <div style="text-align: center;">
                 <button class="siteButton" onclick="location.href='https://w.' + document.domain + '/main/' + 'https://discord.com/login'"><i class="fab fa-discord"></i>Discord</button>
                 <button class="siteButton" onclick="location.href='https://w.' + document.domain + '/main/' + 'https://youtube.com'""><i class="fab fa-youtube"></i>YouTube</button>
                 <button class="siteButton" onclick="location.href='https://w.' + document.domain + '/main/' + 'https://reddit.com'""><i class="fab fa-reddit"></i>Reddit</button>
             </div>
-            <footer>
-                <p2>
-                    <a href="/terms">Terms and Conditions</a>
-                    |
-                    <a href="/privacy">Privacy Policy</a>
-                    |
-                    <a href="/credits">Credits</a>
-                </p2>
-            </footer>
         </main>
-        <script src="/scripts/main.js"></script>
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script src="scripts/main.js"></script>
         <script>
             window.addEventListener("DOMContentLoaded", function() {
             var prefix = "main";
             document.getElementById("womf").addEventListener("submit", function(e) {
                e.preventDefault();
                var url = document.getElementById("womurl").value;
-               if (url.includes(".")) {
+               if (url.includes('.') && !url.includes(' ')) {
                    window.location.href = "https://w." + document.domain + "/" + prefix + "/" + (url.substring(0, 4) == "http" ? url : "https://" + url);
-                }  else if (url) {
+                }  else {
                      window.location.href = "https://w." + document.domain + "/" + prefix + "/" + "https://searx.degenerate.info/search?q=" + url.replace(/ /g, "+");
                 }
             }, false);
         }, false);
         </script>
     </body>
-</html> 
+</html>
