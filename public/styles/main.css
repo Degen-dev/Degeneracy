@@ -1,36 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,500,600,700,800,900');
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    text-align: center;
     background-color: #292a36;
-    color: grey;
-    font-weight: 500;
-    font-family: 'Ubuntu';
-    font-size: 20px;
 }
 
-.mainHead {
-    text-align: center;
-    font-size: 65px;
+/* Landing Page */
+
+#landing {
     margin-top: 15%;
+    text-align: center;
+}
+
+#landing-head {
+    color: grey;
+    font-size: 65px;
     font-weight: 900;
     font-family: 'Roboto';
 }
 
-.proHead {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 900;
-    font-family: 'Ubuntu';
-    color: white;
-}
-
-.byP {
+#landing-body {
     text-align: center;
     font-family: 'Ubuntu';
     color: white;
@@ -38,12 +27,46 @@ body {
     font-size: 15px;
 }
 
-.picture img {
-    width: 100%;
-    height: 80%;
+/* Choice Page */
+
+#choices {
+    text-align: center;
+    margin-top: 12%;
+    font-weight: 500;
 }
 
-.picture {
+#choiceheadtxt {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Ubuntu';
+    color: white;
+}
+
+#choiceDesc {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu';
+    color: white;
+}
+
+#choiceDesc:after {
+    content: 'To get a description of each proxy, hover over the icon you would like the description of.';
+}
+
+#womginxDesc:hover ~ #choiceDesc::after {
+    content: 'Womginx is a very fast proxy with good site compatibility.';
+}
+
+#uvDesc:hover ~ #choiceDesc::after {
+    content: 'Ultraviolet is an incredibly fast and secure proxy with support for Spotify, reCaptcha, Discord, and more!';
+}
+
+#ramDesc:hover ~ #choiceDesc::after {
+    content: 'Rammerhead is a super fast and reliable web proxy with amazing site support.';
+}
+
+.imageChoice {
     display: inline-block;
     width: 225px;
     height: 300px;
@@ -61,89 +84,21 @@ body {
     transition: all .5s ease-out;
 }
 
-.picture:hover {
+.imageChoice:hover {
     transition: all .5s ease-in;
     transform: scale(1.05);
 }
 
-.choicePage {
-    position: absolute;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-
-}
-
-.proSelect {
-    margin-bottom: 5%;
-}
-
-#descFrame {
+.imageChoice img {
     width: 100%;
-    height: 50px;}
-
-.homeButton {
-    width: 150px;
-    height: 50px;
-    color: white;
-    padding: 0px 5px;
-    font-size: 15px;
-    font-family: 'Roboto';
-    background: #23272a;
-    border-radius: 5px;
-    border-color: grey;
-    border-width: 1px;
-    margin-top: 15px;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-    border-style: solid;
+    height: 80%;
 }
 
-.homeButton:hover {
-    transition: all .2s ease-in-out;
-    transform: scale(1.05);
-}
-
-.womginxBody {
+#choiceButtons {
     text-align: center;
-    margin-top: 10%;
-    font-family: 'Ubuntu';
-    font-size: 20px;
-    word-wrap: break-word;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.womginxHead {
-    color: grey;
-    font-size: 80px;
-    font-family: 'Roboto';
-}
-
-.corrosionHead {
-    color: grey;
-    font-size: 80px;
-    font-family: 'Roboto';
-}
-
-.rhodiumBody {
-    text-align: center;
-    margin-top: 10%;
-}
-
-.rhodiumHead {
-    color: grey;
-    font-size: 80px;
-    font-family: 'Roboto';
-}
-
-.corrosionBody {
-    text-align: center;
-    margin-top: 10%;
-}
+/* Navbar */
 
 .navbar {
     background-color: #23272a;
@@ -166,7 +121,49 @@ body {
     text-decoration: none;
 }
 
-.navbar i {
+.ddIcon {
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+  
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #23272a;
+    margin-top: 50px;
+    min-width: 150px;
+    z-index: 1;
+    right: 0;
+}
+  
+.dropdownContent a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdownContent a:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+}
+  
+.dropDown:hover .dropdownContent {
+    display: block;
+}
+
+#homeButton {
     color: white;
     display: block;
     float: left;
@@ -183,13 +180,28 @@ body {
 
 .navbar a:hover {
     cursor: pointer;
-    text-decoration: underline;
 }
 
-input[name="url"] {
+/* Pr0xy Pages */
+
+.proHead {
+    margin-top: 15%;
+    text-align: center;
+    color: grey;
+    font-size: 80px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.proBar {
+    text-align: center;
+}
+
+input[type="text"] {
     width: 50%;
     height: 50px;
     padding: 0px 5px;
+    margin-top: 25px;
     color:  white;
     font-family: 'Roboto';
     background: #23272a;
@@ -199,23 +211,6 @@ input[name="url"] {
     border-width: 1px;
     border: 1px solid grey;
     transition: all .2s ease-in-out;
-}
-
-input[name="url"]:hover {
-    transition: all .2s ease-in-out;
-    transform: scale(1.01);
-}
-
-#iframe_frame {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-    border: none;
-    background-color: white;
 }
 
 .proButton {
@@ -234,51 +229,87 @@ input[name="url"]:hover {
     border-style: solid;
 }
 
-button:hover {
+.siteButton {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    padding: 0px 5px;
+    font-size: 17px;
+    font-family: 'Roboto';
+    background: #23272a;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    margin-top: 15px;
+    cursor: pointer;
     transition: all .2s ease-in-out;
-    transform: scale(1.1);
+    border-style: solid;
 }
 
-.credBody {
-    background-color: #292a36;
-	text-align: center;
-	color: grey;
-	font-size: 30px;
-	font-family: 'Ubuntu';
-	margin-top: 5%;
-}
+/* Stealth Mode Iframe */
 
-.credHead {
-    font-size: 69px;
-	color: grey;
-	text-align: center;
-	font-family: 'Roboto';
-    margin-top: 55px;
-}
-
-footer {
+#iframe_frame {
     position: fixed;
-    margin-top: 10px;
+    width: 100%;
+    height: 100%;
     left: 0;
     right: 0;
-    bottom: 10px;
-    font-family: 'Ubuntu';
+    bottom: 0;
+    display: none;
+    border: none;
+    background-color: white;
+}
+
+/* Standard Button */
+
+.std-button {
+    width: 150px;
+    height: 50px;
+    color: white;
+    padding: 0px 5px;
     font-size: 15px;
-    color: grey;
+    font-family: 'Roboto';
+    background: #23272a;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border-style: solid;
 }
 
-footer, footer a {
-    font-size: 15px;
-    text-decoration: none;
+.std-button:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
 }
 
-footer a:hover {
-    text-decoration: underline;
+/* Footer(s) */
+
+.footer{ 
+    position: fixed;     
+    text-align: center;    
+    bottom: 20px; 
+    width: 100%;
 }
 
-.faqFoot {
-    position: relative;
+#footer-href {
+    color: black;
 }
+
+/* Center Horizontally and Vertically */
+
+.middle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+/* Settings 
+Note: CHANGE THIS! THIS IS NOT GOING TO STAY LIKE THIS!! DO NOT LET IT!!! */
 
 .settingsBody {
     margin-top: 3%;
@@ -286,6 +317,7 @@ footer a:hover {
     font-size: 45px;
     font-family: 'Ubuntu';
     font-weight: 500;
+    text-align: center;
 }
 
 .settingsHead {
@@ -349,85 +381,4 @@ footer a:hover {
     height: 52px;
     padding: 0px 5px;
     margin-left: 5px;
-}
-
-.faqBody {
-    text-align: center;
-    background-color: #292a36;
-    font-family: 'Ubuntu';
-    font-weight: 600;
-}
-
-.faqHead {
-    text-align: center;
-    color: grey;
-    font-size: 69px;
-    font-family: 'Roboto';
-    margin-top: 65px;
-    font-weight: 800;
-}
-
-.faqQ {
-    color: grey;
-    font-size: 30px;
-}
-
-.faqA {
-   color: grey;
-   font-size: 20px;
-}
-
-.errorHead {
-    text-align: center;
-	color: grey;
-	font-size: 69px;
-	font-family: 'Roboto';
-}
-
-.errorButton {
-    width: 1000px;
-    height: 50px;
-    color: #FFF;
-    padding: 0px 5px;
-    font-family: "Roboto";
-    font-size: 20px;
-    background: #23272a;
-    border-radius: 5px;
-    border: solid 1px rgb(5px);
-    border-color: grey;
-    border-width: 1px;
-    cursor: pointer;
-}
-
-.errorButton:hover {
-    transition: all .2s ease-in-out;
-    transform: scale(1.1);
-}
-
-.errorBody {
-	text-align: center;
-    color: grey;
-	font-size: 50px;
-}
-
-.errorDiv {
-	font-size: 30px;
-}
-
-.siteButton {
-    width: 150px;
-    height: 50px;
-    text-align: center;
-    color: white;
-    padding: 0px 5px;
-    font-size: 17px;
-    font-family: 'Roboto';
-    background: #23272a;
-    border-radius: 5px;
-    border-color: grey;
-    border-width: 1px;
-    margin-top: 15px;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-    border-style: solid;
 }

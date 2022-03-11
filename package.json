@@ -1,41 +1,20 @@
 {
   "name": "degeneracy",
-  "version": "1.0.0",
-  "description": "A functional, free, and easy to use web proxy site.",
-  "main": "start.js",
+  "version": "1.5.0",
+  "description": "<p align=\"center\">     <img src=\"https://raw.githubusercontent.com/degen-dev/degeneracy/master/public/images/degen.png\"         height=\"300\"> </p> <p align=\"center\">     <a href=\"https://github.com/Degen-dev/Degeneracy/issues\" alt=\"Contributors\">         <img src=\"https://img.shields.io/github/issues/Degen-dev/Degeneracy?style=for-the-badge\" /></a>     <a href=\"https://github.com/Degen-dev/Degeneracy/network/members\" alt=\"Forks\">         <img src=\"https://img.shields.io/github/forks/Degen-dev/Degeneracy?style=for-the-badge\" /></a>      <a href=\"https://github.com/Degen-dev/Degeneracy/stargazers\" alt=\"Stars\">         <img src=\"https://img.shields.io/github/stars/Degen-dev/Degeneracy?style=for-the-badge\" /></a>     <a href=\"https://github.com/Degen-dev/Degeneracy/blob/master/LICENSE\">         <img src=\"https://img.shields.io/github/license/Degen-dev/Degeneracy?style=for-the-badge\" /></a>     <a href=\"https://discord.gg/discord.gg/unblock\">         <img src=\"https://img.shields.io/discord/419123358698045453?style=for-the-badge&logo=discord\"             alt=\"chat on Discord\"></a> </p> <p align=\"center\"> Degeneracy is a functional, free, and easy to use web proxy site made to bypass web filters.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node start.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Degen-dev/Degeneracy.git"
   },
-  "keywords": [
-    "proxy",
-    "bypass",
-    "unblocker",
-    "degenerate",
-    "iboss"
-  ],
-  "author": "Degenerate",
+  "keywords": [],
+  "author": "Degen-dev",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/Degen-dev/Degeneracy/issues"
   },
-  "homepage": "https://github.com/Degen-dev/Degeneracy#readme",
-  "dependencies": {
-    "acorn-hammerhead": "^0.5.0",
-    "body-parser": "^1.19.0",
-    "corrosion": "file:corrosion",
-    "css-tree": "^1.1.3",
-    "express": "^4.17.1",
-    "express-ws": "^5.0.2",
-    "jsdom": "^18.0.0",
-    "mime": "^2.5.2",
-    "parse5": "^6.0.1",
-    "request": "^2.88.2",
-    "webpack": "^5.64.2",
-    "ws": "^8.2.3"
-  }
+  "homepage": "https://github.com/Degen-dev/Degeneracy#readme"
 }
