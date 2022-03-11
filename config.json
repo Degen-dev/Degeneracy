@@ -1,9 +1,0 @@
-{
-    "port": 8443,
-    "ssl": false,
-    "title": "Degeneracy",
-    "prefix": "/go/",
-    "codec": "xor",
-    "blacklist": ["accounts.google.com"],
-    "smokeprefix": "/web/"
-} 
