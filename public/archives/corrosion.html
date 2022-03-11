@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="corrosion">
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+        <link rel="icon" href="/images/Degener.png">
+        <meta name="description" content="A functional and easy to use bypass for filters.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta property="og:image" content="/images/degen.png" />
+        <link rel="stylesheet" href="/styles/main.css">
+        <title>Degeneracy</title>
+    </head>
+    <body class="corrosionBody">
+        <h1 class="corrosionHead">
+            Corrosion
+        </h1>
+        <iframe id="iframe_frame" src=""></iframe>
+        <main>
+            <div class="navbar">
+                <i class="fa fa-home" onclick="location.href='/choice'"></i>
+                <a href="https://discord.gg/unblock">Community</a>
+                <a href="/faq">FAQ</a>
+                <a href="/settings">Settings</a>
+            </div>
+            <div>
+                <form action="/go/gateway" method="POST">
+                    <input type="text" autocomplete="off" list="autocomplete" name="url" placeholder="Search the web freely...">
+                    <button class="proButton" type="submit"><i class="fa fa-search"></i></button>
+                    <!--<button class="proButton" type="button" onclick="corProx()"><i class="fa fa-search"></i></button>-->
+                    <button class="proButton" type="button" onclick="stealth()"><i class="fa fa-eye-slash"></i></button>
+                </form>
+                <datalist id="autocomplete">
+                    <option value="discord.com/login"></option>
+                    <option value="search.brave.com"></option>
+                    <option value="1v1.lol"></option>
+                    <option value="krunker.io">Krunker support coming soon...</option>
+                    <option value="reddit.com"></option>
+                    <option value="inv.riverside.rocks"></option>
+                    <option value="github.com"></option>
+                    <option value="youtube.com"></option>
+                    <option value="zombs.io"></option>
+                </datalist>
+            </div>
+            <div>
+                <button class="siteButton" onclick="location.href='/go/gateway?url=discord.com/login'"><i class="fab fa-discord"></i>Discord</button>
+                <button class="siteButton" onclick="location.href='/go/gateway?url=youtube.com'"><i class="fab fa-youtube"></i>YouTube</button>
+                <button class="siteButton" onclick="location.href='/go/gateway?url=reddit.com'"><i class="fab fa-reddit"></i>Reddit</button>
+            </div>
+            <footer>
+                <p2>
+                    <a href="/terms">Terms and Conditions</a>
+                    |
+                    <a href="/privacy">Privacy Policy</a>
+                    |
+                    <a href="/credits">Credits</a>
+                </p2>
+            </footer>
+        </main>
+        <script src="/scripts/main.js"></script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+    </body>
+</html> 

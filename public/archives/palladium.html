@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="rhodium">
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+        <link rel="icon" href="/images/Degener.png">
+        <meta name="description" content="A functional and easy to use bypass for filters.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta property="og:image" content="/images/degen.png" />
+        <link rel="stylesheet" href="/styles/main.css">
+        <title>Degeneracy</title>
+    </head>
+    <body class="rhodiumBody">
+        <h1 class="rhodiumHead">
+            Palladium
+        </h1>
+        <iframe id="iframe_frame" src=""></iframe>
+        <main>
+            <div class="navbar">
+                <i class="fa fa-home" onclick="location.href='/choice'"></i>
+                <a href="https://discord.gg/unblock">Community</a>
+                <a href="/faq">FAQ</a>
+                <a href="/settings">Settings</a>
+            </div>
+            <div>
+                <form id="tsf">
+                    <input type="text" autocomplete="off" name="url" id="pruorl" placeholder="Search the web freely...">
+                    <button class="proButton" type="submit"><i class="fa fa-search"></i></button>
+                    <button class="proButton" type="button" onclick="pyStealth()"><i class="fa fa-eye-slash"></i></button>
+                </form>
+            </div>
+            <div>
+                <button class="siteButton" onclick="location.href='/service/gateway?url=discord.com/login'"><i class="fab fa-discord"></i>Discord</button>
+                <button class="siteButton" onclick="location.href='/service/gateway?url=youtube.com'"><i class="fab fa-youtube"></i>YouTube</button>
+                <button class="siteButton" onclick="location.href='/service/gateway?url=reddit.com'"><i class="fab fa-reddit"></i>Reddit</button>
+            </div>
+            <footer>
+                <p2>
+                    <a href="/terms">Terms and Conditions</a>
+                    |
+                    <a href="/privacy">Privacy Policy</a>
+                    |
+                    <a href="/credits">Credits</a>
+                </p2>
+            </footer>
+        </main>
+        <script src="/scripts/main.js"></script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script>
+            window.addEventListener("DOMContentLoaded", function() {
+			var prefix = "service";
+			document.getElementById("tsf").addEventListener("submit", function(e) {
+				e.preventDefault();
+				var url = document.getElementById("pruorl").value;
+				if (url.includes('.') && !url.includes(' ')) {
+					window.location.href = "/" + prefix + "/" + "gateway?url=" + (url.substring(0, 4) == "http" ? url : "https://" + url);
+				} else {
+					window.location.href = "/" + prefix + "/" + "gateway?url=https://searx.degenerate.info/search?q=" + url.replace(/ /g, "+");
+				}
+			}, false);
+		}, false);
+        </script>
+    </body>
+</html> 
