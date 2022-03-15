@@ -11,7 +11,7 @@
         <img src="https://img.shields.io/github/stars/Degen-dev/Degeneracy?style=for-the-badge" /></a>
     <a href="https://github.com/Degen-dev/Degeneracy/blob/master/LICENSE">
         <img src="https://img.shields.io/github/license/Degen-dev/Degeneracy?style=for-the-badge" /></a>
-    <a href="https://discord.gg/discord.gg/unblock">
+    <a href="https://discord.gg/unblock">
         <img src="https://img.shields.io/discord/419123358698045453?style=for-the-badge&logo=discord"
             alt="chat on Discord"></a>
 </p>
