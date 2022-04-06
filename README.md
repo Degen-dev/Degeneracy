@@ -178,7 +178,7 @@ For any questions, comments, or concerns, please open an issue, contact me on Di
 [Rammerhead](https://rammerhead.org) (Not open-source so I linked to the official site)
     
 # License
-
+```
 Copyright (C) 2021-present, Degen-dev
 
 This program is free software: you can redistribute it and/or modify
@@ -193,7 +193,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>.
-
+```
 # Donations
 
 If you would like to contribute to the project via donation, send in some crypto or subscribe to the [Patreon](https://patreon.com/degeneracy)! Your donation/contribution is very much appreciated :D
